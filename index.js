@@ -30,7 +30,9 @@ function getFibonacci(n) {
   return result;
 }
 
-// Prime Check
+
+
+//for prime
 function isPrime(num) {
   if (num < 2) return false;
 
@@ -41,12 +43,12 @@ function isPrime(num) {
   return true;
 }
 
-// GCD (HCF)
+
 function gcd(a, b) {
   return b === 0 ? a : gcd(b, a % b);
 }
 
-// LCM
+
 function lcm(a, b) {
   return (a * b) / gcd(a, b);
 }
@@ -70,7 +72,7 @@ app.get("/health", (req, res) => {
   });
 });
 
-/* ------------------ AI Function ------------------ */
+/* ------------------ Ai(gemini) ------------------ */
 
 async function getAIResponse(question) {
 
